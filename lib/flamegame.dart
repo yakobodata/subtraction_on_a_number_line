@@ -17,6 +17,7 @@ class MyGame extends FlameGame {
   Future<void> onLoad() async {
     await super.onLoad();
     // Show an overlay as soon as the game loads (or call this from MyWorld via game.overlays.add(...))
+    overlays.add('Heading');
     overlays.add('TopLeftLogo');
     overlays.add('TopRightLogo');
   }

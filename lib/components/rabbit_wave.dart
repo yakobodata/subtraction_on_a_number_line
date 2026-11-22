@@ -27,7 +27,7 @@ class WaveRabbit extends SpriteComponent
   @override
   Future<void> onLoad() async {
     // Load the rabbit sprite asset from assets/images/rabbit.png
-    sprite = await Sprite.load('rabbit.png');
+    sprite = await Sprite.load('spongebob.png');
   }
 
   @override
@@ -57,7 +57,7 @@ class WaveRabbit extends SpriteComponent
   void update(double dt) {
     super.update(dt);
     // Increase speed and move the rabbit upward each frame
-    fallSpeed += 100 * dt;
+    fallSpeed += 50 * dt;
     position.y -= fallSpeed * dt;
 
     // Remove the rabbit automatically once it exits past the top boundary
