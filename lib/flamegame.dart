@@ -12,4 +12,12 @@ class MyGame extends FlameGame {
 
   @override
   Color backgroundColor() => Colors.blueAccent;
+
+  @override
+  Future<void> onLoad() async {
+    await super.onLoad();
+    // Show an overlay as soon as the game loads (or call this from MyWorld via game.overlays.add(...))
+    overlays.add('TopLeftLogo');
+    overlays.add('TopRightLogo');
+  }
 }
